@@ -2268,7 +2268,7 @@
                 "h": 0.0
               },
               "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
+              "Asset": "0x0100000000000384"
             },
             "Color": {
               "r": 0.577580452,
@@ -2346,7 +2346,7 @@
                 "h": 0.0
               },
               "Mode": "FromAsset",
-              "Asset": "0x0000000000000000"
+              "Asset": "0x0100000000000384"
             },
             "Color": {
               "r": 0.577580452,
@@ -4452,9 +4452,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x01000000000002A1",
@@ -4921,14 +4921,14 @@
             "Parent": "0x01000000000002BD",
             "MenuText": "",
             "StageDirections": "",
-            "Speaker": "0x0100000000000117",
+            "Speaker": "0x0100000000000387",
             "SplitHeight": 64.0,
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Hej! Jestem NPC1!",
+            "Text": "Hej! Jestem prosiakiem!",
             "ExternalId": "",
             "Position": {
               "x": 775.0,
@@ -4984,7 +4984,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Miło cię poznać, NPC1.",
+            "Text": "Miło cię poznać, prosiaku.",
             "ExternalId": "",
             "Position": {
               "x": 1125.0,
@@ -5033,14 +5033,14 @@
             "Parent": "0x01000000000002BD",
             "MenuText": "",
             "StageDirections": "",
-            "Speaker": "0x0100000000000117",
+            "Speaker": "0x0100000000000387",
             "SplitHeight": 64.0,
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Wzajemnie!",
+            "Text": "Wzajemnie! Oink. oink!",
             "ExternalId": "",
             "Position": {
               "x": 1475.0,
@@ -5145,14 +5145,14 @@
             "Parent": "0x01000000000002BD",
             "MenuText": "",
             "StageDirections": "",
-            "Speaker": "0x0100000000000117",
+            "Speaker": "0x0100000000000387",
             "SplitHeight": 64.0,
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "A stoje sobie, nie widać?",
+            "Text": "A stoję sobie, nie widać? Oink.",
             "ExternalId": "",
             "Position": {
               "x": 2150.0,
@@ -6033,7 +6033,7 @@
                 "h": 0.0
               },
               "Mode": "FromAsset",
-              "Asset": "0x0100000000000132"
+              "Asset": "0x0100000000000381"
             },
             "ShortId": 2985306781
           }
@@ -6070,60 +6070,71 @@
                 "h": 0.0
               },
               "Mode": "FromAsset",
-              "Asset": "0x0100000000000135"
+              "Asset": "0x010000000000037E"
             },
             "ShortId": 3223225616
           }
         },
         {
-          "Type": "Asset",
-          "AssetRef": "Assets/Images/NPC2.jpg",
-          "Category": "Image",
+          "Type": "DefaultSupportingCharacterTemplate",
           "Properties": {
-            "TechnicalName": "Ast_C2F4992D",
-            "Id": "0x0100000000000132",
-            "Parent": "0x0100000000000105",
-            "DisplayName": "NPC2",
-            "Filename": "ava_guinevere_01(0032).jpg",
-            "OriginalSource": "file:///F:/_Assets/Images/articy/Galahad/Assets/Portraits/ava_guinevere_01.jpg",
-            "PreviewImage": {
-              "ViewBox": {
-                "x": 0.0,
-                "y": 0.0,
-                "w": 0.0,
-                "h": 0.0
-              }
-            },
+            "TechnicalName": "Ntt_FA265AE8",
+            "Id": "0x0100000000000387",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "Prosiak",
             "Color": {
-              "r": 0.577580452,
-              "g": 0.7605245,
-              "b": 0.7991027
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
             },
             "Text": "",
             "ExternalId": "",
             "Position": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 398.00000000000011,
+              "y": 110.79999999999998
             },
-            "ZIndex": 0.0,
+            "ZIndex": 3.0,
             "Size": {
               "w": 256.0,
               "h": 196.0
             },
-            "ShortId": 3270809901
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x010000000000038B"
+            },
+            "ShortId": 4196817640
+          },
+          "Template": {
+            "DefaultBasicCharacterFeature": {
+              "Age": null,
+              "Species": "",
+              "BornIn": "",
+              "Sex": null,
+              "Occupation": "",
+              "Accent": "",
+              "Personality": "",
+              "Appearance": ""
+            }
           }
         },
         {
           "Type": "Asset",
-          "AssetRef": "Assets/Images/NPC1.jpg",
+          "AssetRef": "Assets/Images/npc2.png",
           "Category": "Image",
           "Properties": {
-            "TechnicalName": "Ast_EA0AE647",
-            "Id": "0x0100000000000135",
+            "TechnicalName": "Ast_08EBDAF3",
+            "Id": "0x0100000000000381",
             "Parent": "0x0100000000000105",
-            "DisplayName": "NPC1",
-            "Filename": "ava_sitlancelot_01(0035).jpg",
-            "OriginalSource": "file:///F:/_Assets/Images/articy/Galahad/Assets/Portraits/ava_sitlancelot_01.jpg",
+            "DisplayName": "npc2",
+            "Filename": "npc2(0281).png",
+            "OriginalSource": "file:///C:/Users/mkuce/Downloads/npc2.png",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -6133,9 +6144,47 @@
               }
             },
             "Color": {
-              "r": 0.577580452,
-              "g": 0.7605245,
-              "b": 0.7991027
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 149674739
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/npc1.png",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_6251A101",
+            "Id": "0x010000000000037E",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "npc1",
+            "Filename": "npc1(027E).png",
+            "OriginalSource": "file:///C:/Users/mkuce/Downloads/npc1.png",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
             },
             "Text": "",
             "ExternalId": "",
@@ -6148,7 +6197,7 @@
               "w": 256.0,
               "h": 196.0
             },
-            "ShortId": 3926582855
+            "ShortId": 1649516801
           }
         },
         {
@@ -6187,6 +6236,82 @@
               "h": 196.0
             },
             "ShortId": 2329810746
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/TutorialLocation.PNG",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_FA9D627D",
+            "Id": "0x0100000000000384",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "TutorialLocation",
+            "Filename": "TutorialLocation(0284).PNG",
+            "OriginalSource": "file:///C:/Users/mkuce/Downloads/TutorialLocation.PNG",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "ZIndex": 3.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 4204618365
+          }
+        },
+        {
+          "Type": "Asset",
+          "AssetRef": "Assets/Images/pig.jpg",
+          "Category": "Image",
+          "Properties": {
+            "TechnicalName": "Ast_7398F81E",
+            "Id": "0x010000000000038B",
+            "Parent": "0x0100000000000105",
+            "DisplayName": "pig",
+            "Filename": "pig(028B).jpg",
+            "OriginalSource": "file:///C:/Users/mkuce/Downloads/pig.jpg",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 80.0,
+              "y": 80.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "ShortId": 1939404830
           }
         },
         {
@@ -6653,6 +6778,11 @@
             "Id": "0x0100000000000113",
             "TechnicalName": "Ntt_B1F02A9D",
             "Type": "Entity"
+          },
+          {
+            "Id": "0x0100000000000387",
+            "TechnicalName": "Ntt_FA265AE8",
+            "Type": "Entity"
           }
         ]
       },
@@ -6886,13 +7016,23 @@
                 "Type": "Asset"
               },
               {
-                "Id": "0x0100000000000135",
-                "TechnicalName": "Ast_EA0AE647",
+                "Id": "0x010000000000037E",
+                "TechnicalName": "Ast_6251A101",
                 "Type": "Asset"
               },
               {
-                "Id": "0x0100000000000132",
-                "TechnicalName": "Ast_C2F4992D",
+                "Id": "0x0100000000000381",
+                "TechnicalName": "Ast_08EBDAF3",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x010000000000038B",
+                "TechnicalName": "Ast_7398F81E",
+                "Type": "Asset"
+              },
+              {
+                "Id": "0x0100000000000384",
+                "TechnicalName": "Ast_FA9D627D",
                 "Type": "Asset"
               }
             ]
