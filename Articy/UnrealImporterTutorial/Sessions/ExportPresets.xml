@@ -1,0 +1,66 @@
+<ExportPresets LastType="Unreal4Export">
+  <Preset DisplayName="UnityImporterIntro" Type="Unity3DExport">
+    <ExportSettings Type="Unity3DExport">
+      <Filename>D:\Unity_Projects\UnityImporterTutorial_010921\Assets\Unity Importer Tutorial.articyu3d</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value="Unity"/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates>
+        <State Id="72057594037928194" Enabled="1"/>
+      </PackageStates>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="XlsxForReimport">
+    <ExportSettings Type="XlsxForReimport">
+      <Filename>C:\Users\karsten.feyerabend\Pictures\temp images\Unreal Importer Tutorial.xlsx</Filename>
+      <SortObjectsBy>DisplayName</SortObjectsBy>
+      <SelectedProperties/>
+      <AutoOpenFile>1</AutoOpenFile>
+      <ExportQueries>1</ExportQueries>
+      <MarkupTextFormat>Plain</MarkupTextFormat>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="JsonExport">
+    <ExportSettings Type="JsonExport">
+      <Filename>C:\VIA-VR\Export.json</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value=""/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates/>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="Unity3DExport">
+    <ExportSettings Type="Unity3DExport">
+      <Filename>D:\Unity_Projects\UnityImporterTutorial_projects_2020.3.33\articy_UnityImporterTutorial_COMPLETE\Assets\Unity Importer Tutorial.articyu3d</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value="Unity"/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates>
+        <State Id="72057594037928194" Enabled="1"/>
+      </PackageStates>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="Unreal4Export">
+    <ExportSettings Type="Unreal4Export">
+      <Filename>D:\Unreal_Projects\UEImporterTutorial_v5b\Content\UnrealImporterTutorial.articyue4</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value=""/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates>
+        <State Id="72057594037928194" Enabled="1"/>
+      </PackageStates>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+</ExportPresets>
