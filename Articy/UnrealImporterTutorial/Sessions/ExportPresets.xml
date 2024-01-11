@@ -51,7 +51,7 @@
   </Preset>
   <Preset DisplayName="" Type="Unreal4Export">
     <ExportSettings Type="Unreal4Export">
-      <Filename>D:\Unreal_Projects\UEImporterTutorial_v5b\Content\UnrealImporterTutorial.articyue4</Filename>
+      <Filename>C:\Users\mkuce\Documents\Unreal Projects\UE5_BaseProject\Content\UnrealImporterTutorial.articyue4</Filename>
       <CustomSettings>
         <Option Name="set_Localization" Value="False"/>
         <Option Name="set_TextFormatter" Value=""/>

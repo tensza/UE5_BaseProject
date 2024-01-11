@@ -5,8 +5,8 @@
     "set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
     "set_UseScriptSupport": "True",
     "ExportVersion": "0.1",
-    "ObjectDefinitionsHash": "0BF9958641072B63BCAB88867C45D2A75B3ECA2BAD06092C2B17DFEA28701612",
-    "ScriptFragmentsHash": "1630799170"
+    "ObjectDefinitionsHash": "6CAC09AFFFC031AE0DFD9D849BA7716363434CA02549D7C00820A11B80AFBDF9",
+    "ScriptFragmentsHash": "2599501317"
   },
   "Project": {
     "Name": "Unreal Importer Tutorial",
@@ -20,28 +20,28 @@
       "Description": "",
       "Variables": [
         {
-          "Variable": "gotTip",
+          "Variable": "mamPodpowiedz",
           "Type": "Boolean",
           "Value": "False",
-          "Description": "Player received a tip about what to ask the Oracle"
+          "Description": "Gracz otrzymal podpowiedz na temat NPC2"
         },
         {
-          "Variable": "visitedDialogue1",
+          "Variable": "odpalonoDialog1",
           "Type": "Boolean",
           "Value": "False",
-          "Description": "Player talked to Kirian before"
+          "Description": "Gracz rozmawial z pierwszym NPC"
         },
         {
-          "Variable": "visitedDialogue2",
+          "Variable": "odpalonoDialog2",
           "Type": "Boolean",
           "Value": "False",
-          "Description": "Player talked to the Oracle before"
+          "Description": "Gracz rozmawial z drugim NPC"
         },
         {
-          "Variable": "testEnd",
+          "Variable": "testKoniec",
           "Type": "Boolean",
           "Value": "False",
-          "Description": "checks processing of variables at end of a dialogue"
+          "Description": "Gdy wszystkie warunki testowe zostaly spelnione"
         }
       ]
     }
@@ -2205,7 +2205,7 @@
             "Id": "0x0100000000000314",
             "Parent": "0x0300000043CE43F7",
             "Attachments": [],
-            "DisplayName": "Tests",
+            "DisplayName": "Testy",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2221,7 +2221,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Test dialogues for implementations",
+            "Text": "Dialogi testowe dla sprawdzenia działania projektu",
             "ExternalId": "",
             "Position": {
               "x": -225.0,
@@ -2259,7 +2259,7 @@
               "0x010000000000010F",
               "0x0100000000000117"
             ],
-            "DisplayName": "Dialogue 1",
+            "DisplayName": "Dialog1",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2275,7 +2275,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Dialogue with NPC 1",
+            "Text": "Dialog z NPC1",
             "ExternalId": "",
             "Position": {
               "x": 217.0,
@@ -2337,7 +2337,7 @@
               "0x010000000000010F",
               "0x0100000000000113"
             ],
-            "DisplayName": "Dialogue 2",
+            "DisplayName": "Dialog2",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2353,7 +2353,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Dialogue with NPC 2",
+            "Text": "Dialog z NPC2",
             "ExternalId": "",
             "Position": {
               "x": 642.0,
@@ -2415,7 +2415,7 @@
               "0x010000000000010F",
               "0x0100000000000117"
             ],
-            "DisplayName": "Linear Test",
+            "DisplayName": "TstLiniowy",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2431,7 +2431,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "A small linear test for first implementation",
+            "Text": "Dialog liniowy",
             "ExternalId": "",
             "Position": {
               "x": 788.0,
@@ -2482,7 +2482,7 @@
               "0x010000000000010F",
               "0x0100000000000113"
             ],
-            "DisplayName": "Branch test",
+            "DisplayName": "TstWybory",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2498,7 +2498,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Small branching structure",
+            "Text": "Dialog z rozgałęzieniami",
             "ExternalId": "",
             "Position": {
               "x": 1167.0,
@@ -2554,7 +2554,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Welcome. I am happy that you accepted our invitation.",
+            "Text": "Hej! Zdaje się, że rozmawiamy po raz pierwszy?",
             "ExternalId": "",
             "Position": {
               "x": 325.0,
@@ -2568,7 +2568,7 @@
             "ShortId": 85687762,
             "InputPins": [
               {
-                "Text": "!GameState.visitedDialogue1",
+                "Text": "!GameState.odpalonoDialog1",
                 "Id": "0x010000000000013E",
                 "Owner": "0x010000000000013B"
               }
@@ -2612,7 +2612,7 @@
             "TechnicalName": "DFr_036E6EA6",
             "Id": "0x0100000000000142",
             "Parent": "0x010000000000011B",
-            "MenuText": "No problem",
+            "MenuText": "Na to wychodzi.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2621,7 +2621,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Sure thing. I was in the area anyways, so it wasn't any trouble.",
+            "Text": "Tak, widzę cię po raz pierwszy.",
             "ExternalId": "",
             "Position": {
               "x": 650.0,
@@ -2677,7 +2677,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Hi.",
+            "Text": "Witam ponownie!",
             "ExternalId": "",
             "Position": {
               "x": 325.0,
@@ -2691,7 +2691,7 @@
             "ShortId": 1934617395,
             "InputPins": [
               {
-                "Text": "GameState.visitedDialogue1",
+                "Text": "GameState.odpalonoDialog1",
                 "Id": "0x0100000000000150",
                 "Owner": "0x010000000000014D"
               }
@@ -2733,7 +2733,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Anything else?",
+            "Text": "Chcesz o coś jeszcze spytać?",
             "ExternalId": "",
             "Position": {
               "x": 1375.0,
@@ -2789,7 +2789,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Great to have an adventurer of your renown in our humble village",
+            "Text": "Witam cię w naszym tutorialu!",
             "ExternalId": "",
             "Position": {
               "x": 1000.0,
@@ -2836,7 +2836,7 @@
             "TechnicalName": "DFr_937E84CD",
             "Id": "0x0100000000000162",
             "Parent": "0x010000000000011B",
-            "MenuText": "Long travels",
+            "MenuText": "No nie wiem...",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2845,7 +2845,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "It was a long journey I had to take. But I am finally here.",
+            "Text": "Hmm, wyglądasz cosik znajomo... Ale nieważne.",
             "ExternalId": "",
             "Position": {
               "x": 650.0,
@@ -2901,7 +2901,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Can I help you with anything before you talk to the Oracle?",
+            "Text": "Czy mogę ci w czymkolwiek pomóc, zanim pogadasz z NPC2?",
             "ExternalId": "",
             "Position": {
               "x": 1375.0,
@@ -2922,7 +2922,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "GameState.visitedDialogue1 = true;",
+                "Text": "GameState.odpalonoDialog1 = true;",
                 "Id": "0x0100000000000170",
                 "Owner": "0x010000000000016C",
                 "Connections": [
@@ -2948,7 +2948,7 @@
             "TechnicalName": "DFr_6540F317",
             "Id": "0x010000000000017A",
             "Parent": "0x010000000000011B",
-            "MenuText": "Oracle dangerous?",
+            "MenuText": "Kim jest NPC2?",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -2957,7 +2957,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I heard the Oracle is unpredictable and knows witchcraft. Am I in danger here?",
+            "Text": "Słyszałem, że NPC2 to kawał wredoty. I na domiar złego jest niebezpieczna. Czy to prawda?",
             "ExternalId": "",
             "Position": {
               "x": 2050.0,
@@ -3004,7 +3004,7 @@
             "TechnicalName": "DFr_83758E1C",
             "Id": "0x0100000000000180",
             "Parent": "0x010000000000011B",
-            "MenuText": "No idea",
+            "MenuText": "Jakieś porady?",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -3013,7 +3013,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Not really, my mind is kinda blank. Do you have a suggestion for a good topic?",
+            "Text": "Może masz jakąś poradę dla mnie, zanim pogadam z NPC2?",
             "ExternalId": "",
             "Position": {
               "x": 2050.0,
@@ -3060,7 +3060,7 @@
             "TechnicalName": "DFr_1A5B8416",
             "Id": "0x0100000000000186",
             "Parent": "0x010000000000011B",
-            "MenuText": "Nope",
+            "MenuText": "Nie, nic.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -3069,7 +3069,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I  am as prepared as one can be. Let's do this!",
+            "Text": "Chyba wiem wszystko, czego potrzebuję.",
             "ExternalId": "",
             "Position": {
               "x": 2050.0,
@@ -3125,7 +3125,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Good luck!",
+            "Text": "Powodzenia!",
             "ExternalId": "",
             "Position": {
               "x": 2400.0,
@@ -3146,7 +3146,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "GameState.testEnd = true;\n",
+                "Text": "GameState.testKoniec = true;\n",
                 "Id": "0x0100000000000197",
                 "Owner": "0x0100000000000193",
                 "Connections": [
@@ -3181,7 +3181,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Let me tell you a secret. That is a rumor we spread ourself.",
+            "Text": "Nie, to tylko plotki, które sama rozpowiada.",
             "ExternalId": "",
             "Position": {
               "x": 2400.0,
@@ -3237,7 +3237,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Well, if you have the chance...",
+            "Text": "Cóż, w sumie...",
             "ExternalId": "",
             "Position": {
               "x": 2400.0,
@@ -3293,7 +3293,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Why would you do that?",
+            "Text": "Dlaczego to robi?",
             "ExternalId": "",
             "Position": {
               "x": 2750.0,
@@ -3349,7 +3349,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Do you have any idea how stressful it is for her to get pestered for every misplaced oxen-cart key?",
+            "Text": "Umie przepowiadać przyszłość, więc ludzie ją nagabywali bez dobrego powodu.",
             "ExternalId": "",
             "Position": {
               "x": 3075.0,
@@ -3405,7 +3405,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Oh, haven't thought about that.",
+            "Text": "Och, rozumiem...",
             "ExternalId": "",
             "Position": {
               "x": 3425.0,
@@ -3461,7 +3461,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Now people only come if they really have problems.",
+            "Text": "Teraz ludzie proszą ją o pomoc tylko jeśli naprawdę muszą.",
             "ExternalId": "",
             "Position": {
               "x": 3775.0,
@@ -3517,7 +3517,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Anything else?",
+            "Text": "Coś jeszcze?",
             "ExternalId": "",
             "Position": {
               "x": 4475.0,
@@ -3573,7 +3573,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Ah, no. You shouldn't.",
+            "Text": "Nie, dobra. Nieważne.",
             "ExternalId": "",
             "Position": {
               "x": 2750.0,
@@ -3629,7 +3629,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "What? Don't leave me hanging. Out with it.",
+            "Text": "Ej, teraz już musisz mi powiedzieć!",
             "ExternalId": "",
             "Position": {
               "x": 3075.0,
@@ -3685,7 +3685,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "She wants a favor from you. So she might be inclined to answer if you ask for the upcoming lottery numbers.",
+            "Text": "Jeśli poprosi cię o przysługę, możesz poprosić o przepowiednię w zamian.",
             "ExternalId": "",
             "Position": {
               "x": 3425.0,
@@ -3741,7 +3741,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "But you haven't heard that from me!",
+            "Text": "Ale nie wiesz tego ode mnie!",
             "ExternalId": "",
             "Position": {
               "x": 3775.0,
@@ -3797,7 +3797,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Thank you. And don't worry - mum's the word.",
+            "Text": "Nie pisnę ani słówkiem, słowo harcerza!",
             "ExternalId": "",
             "Position": {
               "x": 4100.0,
@@ -3818,7 +3818,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "GameState.gotTip = true",
+                "Text": "GameState.mamPodpowiedz = true",
                 "Id": "0x01000000000001F9",
                 "Owner": "0x01000000000001F5",
                 "Connections": [
@@ -3853,7 +3853,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Welcome, welcome.",
+            "Text": "Wiem, że widzimy się po raz pierwszy, ale spodziewałam się ciebie!",
             "ExternalId": "",
             "Position": {
               "x": 800.0,
@@ -3867,7 +3867,7 @@
             "ShortId": 182286045,
             "InputPins": [
               {
-                "Text": "!GameState.visitedDialogue2",
+                "Text": "!GameState.odpalonoDialog2",
                 "Id": "0x0100000000000200",
                 "Owner": "0x01000000000001FD"
               }
@@ -3909,7 +3909,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Nice to see you again.",
+            "Text": "Miło cię znowu widzieć.",
             "ExternalId": "",
             "Position": {
               "x": 800.0,
@@ -3923,7 +3923,7 @@
             "ShortId": 2996826220,
             "InputPins": [
               {
-                "Text": "GameState.visitedDialogue2",
+                "Text": "GameState.odpalonoDialog2",
                 "Id": "0x0100000000000207",
                 "Owner": "0x0100000000000204"
               }
@@ -3965,7 +3965,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I hope it is okay if I get right down to business? Time is of the essence here.",
+            "Text": "Darujmy sobie uprzejmości i przejdźmy od razu do sedna.",
             "ExternalId": "",
             "Position": {
               "x": 1125.0,
@@ -4021,7 +4021,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "The early bird speaks silver, as the wise ones say.",
+            "Text": "Jasne!",
             "ExternalId": "",
             "Position": {
               "x": 1450.0,
@@ -4054,62 +4054,6 @@
                       "b": 0.7991027
                     },
                     "Label": "",
-                    "TargetPin": "0x0100000000000239",
-                    "Target": "0x0100000000000236"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "DialogueFragment",
-          "Properties": {
-            "TechnicalName": "DFr_239E650A",
-            "Id": "0x0100000000000236",
-            "Parent": "0x0100000000000121",
-            "MenuText": "",
-            "StageDirections": "",
-            "Speaker": "0x0100000000000113",
-            "SplitHeight": 64.0,
-            "Color": {
-              "r": 0.577580452,
-              "g": 0.7605245,
-              "b": 0.7991027
-            },
-            "Text": "And the worm gets the cheese. So true.",
-            "ExternalId": "",
-            "Position": {
-              "x": 1775.0,
-              "y": 550.0
-            },
-            "ZIndex": 15.0,
-            "Size": {
-              "w": 225.0,
-              "h": 200.0
-            },
-            "ShortId": 597583114,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000239",
-                "Owner": "0x0100000000000236"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000023A",
-                "Owner": "0x0100000000000236",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.577580452,
-                      "g": 0.7605245,
-                      "b": 0.7991027
-                    },
-                    "Label": "",
                     "TargetPin": "0x0100000000000242",
                     "Target": "0x010000000000023F"
                   }
@@ -4133,10 +4077,10 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Are you aware of why I invited you here?",
+            "Text": "Wiesz, czemu rozmawiamy?",
             "ExternalId": "",
             "Position": {
-              "x": 2100.0,
+              "x": 1825.0,
               "y": 550.0
             },
             "ZIndex": 10.0,
@@ -4191,7 +4135,7 @@
             "TechnicalName": "DFr_AE76FD71",
             "Id": "0x0100000000000246",
             "Parent": "0x0100000000000121",
-            "MenuText": "No idea",
+            "MenuText": "Niespecjalnie.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -4200,7 +4144,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Not really. Besides promising a sizeable reward the invitation was pretty vague.",
+            "Text": "Zielonego pojęcia nie mam.",
             "ExternalId": "",
             "Position": {
               "x": 2425.0,
@@ -4247,7 +4191,7 @@
             "TechnicalName": "DFr_519F3783",
             "Id": "0x010000000000024C",
             "Parent": "0x0100000000000121",
-            "MenuText": "I guess so",
+            "MenuText": "Chyba tak...",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -4256,7 +4200,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Could it have something to do with the evil looking forest behind the village?",
+            "Text": "Masz mi pokazać jak działają dialogi w Unrealu, tak?",
             "ExternalId": "",
             "Position": {
               "x": 2425.0,
@@ -4312,7 +4256,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "The task I ask of you is not without danger. We will reward you accordingly.",
+            "Text": "No to cię oświecę! Mam dla ciebie zadanie.",
             "ExternalId": "",
             "Position": {
               "x": 2750.0,
@@ -4368,7 +4312,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Indeed, mighty adventurer. You have keen eyes and a sharp mind.",
+            "Text": "Między innymi. Ale chce cię też prosić o przysługę.",
             "ExternalId": "",
             "Position": {
               "x": 2750.0,
@@ -4424,7 +4368,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "The forest that lies beyond our village is cursed and we fear for our lives!",
+            "Text": "Musisz wybrać się do pobliskiej wioski zwanej Cudowianki i przynieść mi kryształową kulę ze sklepu imć Svarowskiego.",
             "ExternalId": "",
             "Position": {
               "x": 3100.0,
@@ -4445,7 +4389,7 @@
             ],
             "OutputPins": [
               {
-                "Text": "GameState.visitedDialogue2 = true",
+                "Text": "GameState.odpalonoDialog2 = true",
                 "Id": "0x0100000000000268",
                 "Owner": "0x0100000000000264",
                 "Connections": [
@@ -4480,7 +4424,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "You know that the forest beyond our village is still cursed?",
+            "Text": "Mimo że ciągle nie dostałam swojej magicznej kuli...",
             "ExternalId": "",
             "Position": {
               "x": 1125.0,
@@ -4508,13 +4452,13 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.577580452,
-                      "g": 0.7605245,
-                      "b": 0.7991027
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
                     },
                     "Label": "",
-                    "TargetPin": "0x0100000000000275",
-                    "Target": "0x0100000000000272"
+                    "TargetPin": "0x01000000000002A1",
+                    "Target": "0x010000000000029F"
                   }
                 ]
               }
@@ -4527,7 +4471,7 @@
             "TechnicalName": "DFr_41B7C34B",
             "Id": "0x0100000000000285",
             "Parent": "0x0100000000000121",
-            "MenuText": "Forest?",
+            "MenuText": "Wioska?",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -4536,7 +4480,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "An evil Forest? We are indeed living in grim times.",
+            "Text": "Co to za wioska?",
             "ExternalId": "",
             "Position": {
               "x": 3700.0,
@@ -4583,7 +4527,7 @@
             "TechnicalName": "DFr_C18C47A0",
             "Id": "0x010000000000028B",
             "Parent": "0x0100000000000121",
-            "MenuText": "Curse?",
+            "MenuText": "Kryształowa kula?",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -4592,7 +4536,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "A curse? That doesn't sound good.",
+            "Text": "Nie możesz przepowiadać przyszłości bez kuli, tak?",
             "ExternalId": "",
             "Position": {
               "x": 3700.0,
@@ -4639,7 +4583,7 @@
             "TechnicalName": "DFr_A95E9253",
             "Id": "0x0100000000000291",
             "Parent": "0x0100000000000121",
-            "MenuText": "No questions!",
+            "MenuText": "Dobra, nie mam pytań.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -4648,7 +4592,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Say no more! I will find the origin of the curse and make short work of it!",
+            "Text": "Brzmi prosto. Wyruszę w drogę natychmiast.",
             "ExternalId": "",
             "Position": {
               "x": 3700.0,
@@ -4704,7 +4648,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "We will pray for your swift return.",
+            "Text": "Wyśmienicie!",
             "ExternalId": "",
             "Position": {
               "x": 4025.0,
@@ -4760,10 +4704,10 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Now that you mention it. Would it be any trouble to provide me with the lottery numbers for next week?",
+            "Text": "Mam tylko małą prośbę... Przepowiedziałbyś mi szóstkę w Lotto?",
             "ExternalId": "",
             "Position": {
-              "x": 5025.0,
+              "x": 4750.0,
               "y": 550.0
             },
             "ZIndex": 40.0,
@@ -4816,10 +4760,10 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "*Sigh* Sure, why not. 12-17-32-33-41-49",
+            "Text": "Ech, no dobrze... 2 3 14 33 44 53. A teraz idź se.",
             "ExternalId": "",
             "Position": {
-              "x": 5325.0,
+              "x": 5075.0,
               "y": 550.0
             },
             "ZIndex": 42.0,
@@ -4860,62 +4804,6 @@
         {
           "Type": "DialogueFragment",
           "Properties": {
-            "TechnicalName": "DFr_2F96A000",
-            "Id": "0x01000000000002DD",
-            "Parent": "0x0100000000000121",
-            "MenuText": "",
-            "StageDirections": "",
-            "Speaker": "0x0100000000000113",
-            "SplitHeight": 64.0,
-            "Color": {
-              "r": 0.577580452,
-              "g": 0.7605245,
-              "b": 0.7991027
-            },
-            "Text": "Is there anything else I can do for you, before you leave?",
-            "ExternalId": "",
-            "Position": {
-              "x": 4725.0,
-              "y": 550.0
-            },
-            "ZIndex": 44.0,
-            "Size": {
-              "w": 225.0,
-              "h": 200.0
-            },
-            "ShortId": 798400512,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000002E0",
-                "Owner": "0x01000000000002DD"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x01000000000002E1",
-                "Owner": "0x01000000000002DD",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.577580452,
-                      "g": 0.7605245,
-                      "b": 0.7991027
-                    },
-                    "Label": "",
-                    "TargetPin": "0x01000000000002A9",
-                    "Target": "0x01000000000002A6"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "DialogueFragment",
-          "Properties": {
             "TechnicalName": "DFr_5DBB5368",
             "Id": "0x01000000000002E7",
             "Parent": "0x0100000000000121",
@@ -4928,7 +4816,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "To be precise not the forest is evil, but its denizens. Still, the entire situation is is very inconvenient.",
+            "Text": "Wioska specjalizująca się w magicznych artefaktach, jak magiczne kule.",
             "ExternalId": "",
             "Position": {
               "x": 4050.0,
@@ -4984,7 +4872,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I am afraid so. Although of what exact nature is still hidden from me.",
+            "Text": "Mogę... ale z kulą będzie mi łatwiej.",
             "ExternalId": "",
             "Position": {
               "x": 4050.0,
@@ -5040,7 +4928,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Hey! This is the first dialogue line in this test dialogue!",
+            "Text": "Hej! Jestem NPC1!",
             "ExternalId": "",
             "Position": {
               "x": 775.0,
@@ -5096,7 +4984,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Really?",
+            "Text": "Miło cię poznać, NPC1.",
             "ExternalId": "",
             "Position": {
               "x": 1125.0,
@@ -5152,7 +5040,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Yes. Unbelievable, right?",
+            "Text": "Wzajemnie!",
             "ExternalId": "",
             "Position": {
               "x": 1475.0,
@@ -5208,7 +5096,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I think I spider!",
+            "Text": "To co tu robisz?",
             "ExternalId": "",
             "Position": {
               "x": 1825.0,
@@ -5264,7 +5152,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Hey! Ho! Let's go! Gabba, gabba, hey!",
+            "Text": "A stoje sobie, nie widać?",
             "ExternalId": "",
             "Position": {
               "x": 2150.0,
@@ -5320,7 +5208,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Hi there. How are things?",
+            "Text": "Hej, co tam?",
             "ExternalId": "",
             "Position": {
               "x": 750.0,
@@ -5378,7 +5266,7 @@
             "TechnicalName": "DFr_F76CB9F9",
             "Id": "0x010000000000032D",
             "Parent": "0x010000000000031C",
-            "MenuText": "Good",
+            "MenuText": "W porząsiu!",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -5387,7 +5275,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Doing great thanks.",
+            "Text": "Jest całkiem nieźle.",
             "ExternalId": "",
             "Position": {
               "x": 1075.0,
@@ -5434,7 +5322,7 @@
             "TechnicalName": "DFr_BAD9F592",
             "Id": "0x0100000000000333",
             "Parent": "0x010000000000031C",
-            "MenuText": "Meh",
+            "MenuText": "A nic.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -5443,7 +5331,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Like the Germans are fond of saying: \"Muss\".",
+            "Text": "Gadamy, nic się nie dzieje.",
             "ExternalId": "",
             "Position": {
               "x": 1075.0,
@@ -5499,7 +5387,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "What do you think of the weather?",
+            "Text": "To pogadajmy o pogodzie. Jak ci się podoba dzisiaj?",
             "ExternalId": "",
             "Position": {
               "x": 1400.0,
@@ -5577,7 +5465,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Okay then. Take care.",
+            "Text": "Dobra, koniec tych pogaduszek!",
             "ExternalId": "",
             "Position": {
               "x": 2150.0,
@@ -5624,7 +5512,7 @@
             "TechnicalName": "DFr_98281AB9",
             "Id": "0x010000000000034C",
             "Parent": "0x010000000000031C",
-            "MenuText": "Too hot",
+            "MenuText": "Za gorąco.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -5633,7 +5521,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I am melting! Not a fan of this humid heat.",
+            "Text": "Jest strasznie gorąco, jak dla mnie.",
             "ExternalId": "",
             "Position": {
               "x": 1712.0,
@@ -5680,7 +5568,7 @@
             "TechnicalName": "DFr_D260A08E",
             "Id": "0x0100000000000352",
             "Parent": "0x010000000000031C",
-            "MenuText": "Too cold",
+            "MenuText": "Za zimno.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -5689,7 +5577,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I am freezing, where is the sun?",
+            "Text": "Trochę mi zimno, szczerze powiedziawszy...",
             "ExternalId": "",
             "Position": {
               "x": 1712.0,
@@ -5736,7 +5624,7 @@
             "TechnicalName": "DFr_EB3D8305",
             "Id": "0x0100000000000358",
             "Parent": "0x010000000000031C",
-            "MenuText": "Pretty wet",
+            "MenuText": "W sam raz.",
             "StageDirections": "",
             "Speaker": "0x010000000000010F",
             "SplitHeight": 64.0,
@@ -5745,7 +5633,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I am cool with all the rain - I like jumping into puddles.",
+            "Text": "Jak dla mnie pogoda jest w sam raz.",
             "ExternalId": "",
             "Position": {
               "x": 1712.0,
@@ -5792,7 +5680,7 @@
             "TechnicalName": "Hub_6F4EAF29",
             "Id": "0x0100000000000173",
             "Parent": "0x010000000000011B",
-            "DisplayName": "Questions",
+            "DisplayName": "Pytania",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -5867,7 +5755,7 @@
             "TechnicalName": "Hub_93724850",
             "Id": "0x010000000000026C",
             "Parent": "0x0100000000000121",
-            "DisplayName": "Questions",
+            "DisplayName": "Pytania",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -5973,40 +5861,6 @@
         {
           "Type": "Jump",
           "Properties": {
-            "TechnicalName": "Jmp_F2E7FD71",
-            "Id": "0x0100000000000272",
-            "Parent": "0x0100000000000121",
-            "Target": "0x010000000000026C",
-            "TargetPin": "0x010000000000026E",
-            "Color": {
-              "r": 0.577580452,
-              "g": 0.7605245,
-              "b": 0.7991027
-            },
-            "Text": "",
-            "ExternalId": "",
-            "Position": {
-              "x": 1450.0,
-              "y": 850.0
-            },
-            "ZIndex": 25.0,
-            "Size": {
-              "w": 175.0,
-              "h": 150.0
-            },
-            "ShortId": 4075289969,
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000275",
-                "Owner": "0x0100000000000272"
-              }
-            ]
-          }
-        },
-        {
-          "Type": "Jump",
-          "Properties": {
             "TechnicalName": "Jmp_83A87C4F",
             "Id": "0x01000000000002F3",
             "Parent": "0x0100000000000121",
@@ -6044,12 +5898,12 @@
             "TechnicalName": "Cnd_BBA54379",
             "Id": "0x010000000000029F",
             "Parent": "0x0100000000000121",
-            "DisplayName": "GameState.gotTip == true",
+            "DisplayName": "GameState.mamPodpowiedz == true",
             "Text": "",
             "ExternalId": "",
             "Position": {
               "x": 4375.0,
-              "y": 850.0
+              "y": 1000.0
             },
             "ZIndex": 37.0,
             "Size": {
@@ -6057,7 +5911,7 @@
               "h": 100.0
             },
             "ShortId": 3148170105,
-            "Expression": "GameState.gotTip == true",
+            "Expression": "GameState.mamPodpowiedz == true",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -6084,8 +5938,8 @@
                       "b": 0.7991027
                     },
                     "Label": "",
-                    "TargetPin": "0x01000000000002E0",
-                    "Target": "0x01000000000002DD"
+                    "TargetPin": "0x01000000000002A9",
+                    "Target": "0x01000000000002A6"
                   }
                 ]
               },
@@ -6117,7 +5971,7 @@
             "Id": "0x010000000000010F",
             "Parent": "0x03000000AC61A2B3",
             "Attachments": [],
-            "DisplayName": "Player",
+            "DisplayName": "Gracz",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -6154,7 +6008,7 @@
             "Id": "0x0100000000000113",
             "Parent": "0x03000000AC61A2B3",
             "Attachments": [],
-            "DisplayName": "Oracle",
+            "DisplayName": "NPC2",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -6191,7 +6045,7 @@
             "Id": "0x0100000000000117",
             "Parent": "0x03000000AC61A2B3",
             "Attachments": [],
-            "DisplayName": "Kirian",
+            "DisplayName": "NPC1",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -6223,13 +6077,13 @@
         },
         {
           "Type": "Asset",
-          "AssetRef": "Assets/Images/ava_guinevere_01.jpg",
+          "AssetRef": "Assets/Images/NPC2.jpg",
           "Category": "Image",
           "Properties": {
             "TechnicalName": "Ast_C2F4992D",
             "Id": "0x0100000000000132",
             "Parent": "0x0100000000000105",
-            "DisplayName": "ava_guinevere_01",
+            "DisplayName": "NPC2",
             "Filename": "ava_guinevere_01(0032).jpg",
             "OriginalSource": "file:///F:/_Assets/Images/articy/Galahad/Assets/Portraits/ava_guinevere_01.jpg",
             "PreviewImage": {
@@ -6261,13 +6115,13 @@
         },
         {
           "Type": "Asset",
-          "AssetRef": "Assets/Images/ava_sitlancelot_01.jpg",
+          "AssetRef": "Assets/Images/NPC1.jpg",
           "Category": "Image",
           "Properties": {
             "TechnicalName": "Ast_EA0AE647",
             "Id": "0x0100000000000135",
             "Parent": "0x0100000000000105",
-            "DisplayName": "ava_sitlancelot_01",
+            "DisplayName": "NPC1",
             "Filename": "ava_sitlancelot_01(0035).jpg",
             "OriginalSource": "file:///F:/_Assets/Images/articy/Galahad/Assets/Portraits/ava_sitlancelot_01.jpg",
             "PreviewImage": {
@@ -6299,13 +6153,13 @@
         },
         {
           "Type": "Asset",
-          "AssetRef": "Assets/Images/Class_Template_Entity_MainCharacter_256.png",
+          "AssetRef": "Assets/Images/AvatarGracz.png",
           "Category": "Image",
           "Properties": {
             "TechnicalName": "Ast_8ADE173A",
             "Id": "0x0100000000000138",
             "Parent": "0x0100000000000105",
-            "DisplayName": "Class_Template_Entity_MainCharacter_256",
+            "DisplayName": "AvatarGracz",
             "Filename": "Class_Template_Entity_MainCharacter_256(0038).png",
             "OriginalSource": "file:///F:/_Assets/Images/articy/Graphics/Icons/Class_Template_Entity_MainCharacter_256.png",
             "PreviewImage": {
@@ -6692,16 +6546,6 @@
                 "Type": "DialogueFragment"
               },
               {
-                "Id": "0x0100000000000272",
-                "TechnicalName": "Jmp_F2E7FD71",
-                "Type": "Jump"
-              },
-              {
-                "Id": "0x0100000000000236",
-                "TechnicalName": "DFr_239E650A",
-                "Type": "DialogueFragment"
-              },
-              {
                 "Id": "0x010000000000023F",
                 "TechnicalName": "DFr_7225F0A4",
                 "Type": "DialogueFragment"
@@ -6777,11 +6621,6 @@
                 "Type": "Jump"
               },
               {
-                "Id": "0x01000000000002DD",
-                "TechnicalName": "DFr_2F96A000",
-                "Type": "DialogueFragment"
-              },
-              {
                 "Id": "0x01000000000002A6",
                 "TechnicalName": "DFr_426B8005",
                 "Type": "DialogueFragment"
@@ -6801,6 +6640,11 @@
         "Type": "Entities",
         "Children": [
           {
+            "Id": "0x010000000000010F",
+            "TechnicalName": "Ntt_65BA230A",
+            "Type": "Entity"
+          },
+          {
             "Id": "0x0100000000000117",
             "TechnicalName": "Ntt_C01E8510",
             "Type": "Entity"
@@ -6808,11 +6652,6 @@
           {
             "Id": "0x0100000000000113",
             "TechnicalName": "Ntt_B1F02A9D",
-            "Type": "Entity"
-          },
-          {
-            "Id": "0x010000000000010F",
-            "TechnicalName": "Ntt_65BA230A",
             "Type": "Entity"
           }
         ]
@@ -7042,8 +6881,8 @@
             "Type": "AssetsUserFolder",
             "Children": [
               {
-                "Id": "0x0100000000000132",
-                "TechnicalName": "Ast_C2F4992D",
+                "Id": "0x0100000000000138",
+                "TechnicalName": "Ast_8ADE173A",
                 "Type": "Asset"
               },
               {
@@ -7052,8 +6891,8 @@
                 "Type": "Asset"
               },
               {
-                "Id": "0x0100000000000138",
-                "TechnicalName": "Ast_8ADE173A",
+                "Id": "0x0100000000000132",
+                "TechnicalName": "Ast_C2F4992D",
                 "Type": "Asset"
               }
             ]

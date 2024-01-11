@@ -59,50 +59,50 @@ public:
 	#endif
 	 UUEImporterTutorialExpressoScripts() 
 	{
-		Conditions.Add(1869598754, [&]
+		Conditions.Add(-473103579, [&]
 		{
 			return ConditionOrTrue(
-				!(*GameState->visitedDialogue1)
+				!(*GameState->odpalonoDialog1)
 			);
 		});
-		Conditions.Add(-699477186, [&]
+		Conditions.Add(-711431537, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->visitedDialogue1)
+				(*GameState->odpalonoDialog1)
 			);
 		});
-		Instructions.Add(1012491589, [&]
+		Instructions.Add(79399307, [&]
 		{
-			(*GameState->visitedDialogue1) = true;
+			(*GameState->odpalonoDialog1) = true;
 		});
-		Instructions.Add(396507598, [&]
+		Instructions.Add(67456409, [&]
 		{
-			(*GameState->testEnd) = true;
+			(*GameState->testKoniec) = true;
 		});
-		Instructions.Add(1936233199, [&]
+		Instructions.Add(465079271, [&]
 		{
-			(*GameState->gotTip) = true;
+			(*GameState->mamPodpowiedz) = true;
 		});
-		Conditions.Add(1546660066, [&]
+		Conditions.Add(-795673627, [&]
 		{
 			return ConditionOrTrue(
-				!(*GameState->visitedDialogue2)
+				!(*GameState->odpalonoDialog2)
 			);
 		});
-		Conditions.Add(-451859458, [&]
+		Conditions.Add(-423128497, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->visitedDialogue2)
+				(*GameState->odpalonoDialog2)
 			);
 		});
-		Instructions.Add(-823039280, [&]
+		Instructions.Add(-1330650628, [&]
 		{
-			(*GameState->visitedDialogue2) = true;
+			(*GameState->odpalonoDialog2) = true;
 		});
-		Conditions.Add(-432057496, [&]
+		Conditions.Add(334985452, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->gotTip) == true
+				(*GameState->mamPodpowiedz) == true
 			);
 		});
 	}
