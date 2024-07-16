@@ -4,7 +4,7 @@
 #pragma once
 
 #include "CoreUObject.h"
-#include "ArticyRuntime/Public/ArticyGlobalVariables.h"
+#include "ArticyGlobalVariables.h"
 #include "UEImporterTutorialGlobalVariables.generated.h"
 #if !((defined(PLATFORM_PS4) && PLATFORM_PS4) || (defined(PLATFORM_PS5) && PLATFORM_PS5))
 #pragma warning(push)

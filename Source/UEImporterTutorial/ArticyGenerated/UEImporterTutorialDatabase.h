@@ -4,7 +4,7 @@
 #pragma once
 
 #include "CoreUObject.h"
-#include "ArticyRuntime/Public/ArticyDatabase.h"
+#include "ArticyDatabase.h"
 #include "UEImporterTutorialExpressoScripts.h"
 #include "UEImporterTutorialDatabase.generated.h"
 
