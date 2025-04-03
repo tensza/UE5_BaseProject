@@ -1,4 +1,4 @@
-<ExportPresets LastType="Unreal4Export">
+<ExportPresets LastType="Unity3DExport">
   <Preset DisplayName="UnityImporterIntro" Type="Unity3DExport">
     <ExportSettings Type="Unity3DExport">
       <Filename>D:\Unity_Projects\UnityImporterTutorial_010921\Assets\Unity Importer Tutorial.articyu3d</Filename>
@@ -35,12 +35,12 @@
       <SelectedRuleSet>72057594037928191</SelectedRuleSet>
     </ExportSettings>
   </Preset>
-  <Preset DisplayName="" Type="Unity3DExport">
-    <ExportSettings Type="Unity3DExport">
-      <Filename>D:\Unity_Projects\UnityImporterTutorial_projects_2020.3.33\articy_UnityImporterTutorial_COMPLETE\Assets\Unity Importer Tutorial.articyu3d</Filename>
+  <Preset DisplayName="" Type="Unreal4Export">
+    <ExportSettings Type="Unreal4Export">
+      <Filename>C:\Users\mkuce\Documents\Unreal Projects\UE5_BaseProject\Content\UnrealImporterTutorial.articyue4</Filename>
       <CustomSettings>
         <Option Name="set_Localization" Value="False"/>
-        <Option Name="set_TextFormatter" Value="Unity"/>
+        <Option Name="set_TextFormatter" Value=""/>
         <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
       </CustomSettings>
       <PackageStates>
@@ -49,12 +49,12 @@
       <SelectedRuleSet>72057594037928191</SelectedRuleSet>
     </ExportSettings>
   </Preset>
-  <Preset DisplayName="" Type="Unreal4Export">
-    <ExportSettings Type="Unreal4Export">
-      <Filename>C:\Users\mkuce\Documents\Unreal Projects\UE5_BaseProject\Content\UnrealImporterTutorial.articyue4</Filename>
+  <Preset DisplayName="" Type="Unity3DExport">
+    <ExportSettings Type="Unity3DExport">
+      <Filename>C:\Users\mkuce\Documents\UnityProjects\Unity_BaseProject\Assets\Unity Importer Tutorial.articyu3d</Filename>
       <CustomSettings>
         <Option Name="set_Localization" Value="False"/>
-        <Option Name="set_TextFormatter" Value=""/>
+        <Option Name="set_TextFormatter" Value="Unity"/>
         <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
       </CustomSettings>
       <PackageStates>
