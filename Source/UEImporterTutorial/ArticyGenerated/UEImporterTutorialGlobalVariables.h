@@ -17,38 +17,44 @@ class UEIMPORTERTUTORIAL_API UUEImporterTutorialGameStateVariables : public UArt
 	GENERATED_BODY()
 	
 public:
-	/** Gracz otrzymal podpowiedz na temat NPC2 */
+	/** Gracz otrzymał podpowiedź */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GameState")
-	UArticyBool* mamPodpowiedz = nullptr;
-	/** Gracz rozmawial z pierwszym NPC */
+	UArticyBool* gotTip = nullptr;
+	/** Gracz odegrał Dialog1 */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GameState")
-	UArticyBool* odpalonoDialog1 = nullptr;
-	/** Gracz rozmawial z drugim NPC */
+	UArticyBool* visitedDialogue1 = nullptr;
+	/** Gracz odegrał Dialog2 */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GameState")
-	UArticyBool* odpalonoDialog2 = nullptr;
-	/** Gdy wszystkie warunki testowe zostaly spelnione */
+	UArticyBool* visitedDialogue2 = nullptr;
+	/** Czy wszystko przetestowane? */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GameState")
-	UArticyBool* testKoniec = nullptr;
+	UArticyBool* testEnd = nullptr;
+	/** Cheat aktywowany */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="GameState")
+	UArticyBool* cheatUsed = nullptr;
 	
 	 UUEImporterTutorialGameStateVariables() 
 	{
-		mamPodpowiedz = CreateDefaultSubobject<UArticyBool>("mamPodpowiedz");
-		odpalonoDialog1 = CreateDefaultSubobject<UArticyBool>("odpalonoDialog1");
-		odpalonoDialog2 = CreateDefaultSubobject<UArticyBool>("odpalonoDialog2");
-		testKoniec = CreateDefaultSubobject<UArticyBool>("testKoniec");
+		gotTip = CreateDefaultSubobject<UArticyBool>("gotTip");
+		visitedDialogue1 = CreateDefaultSubobject<UArticyBool>("visitedDialogue1");
+		visitedDialogue2 = CreateDefaultSubobject<UArticyBool>("visitedDialogue2");
+		testEnd = CreateDefaultSubobject<UArticyBool>("testEnd");
+		cheatUsed = CreateDefaultSubobject<UArticyBool>("cheatUsed");
 	}
 	
 	void Init(UArticyGlobalVariables* const Store) 
 	{
 		/** initialize the variables */
-		mamPodpowiedz->Init<UArticyBool>(this, Store, TEXT("GameState.mamPodpowiedz"), false);
-		this->Variables.Add(mamPodpowiedz);
-		odpalonoDialog1->Init<UArticyBool>(this, Store, TEXT("GameState.odpalonoDialog1"), false);
-		this->Variables.Add(odpalonoDialog1);
-		odpalonoDialog2->Init<UArticyBool>(this, Store, TEXT("GameState.odpalonoDialog2"), false);
-		this->Variables.Add(odpalonoDialog2);
-		testKoniec->Init<UArticyBool>(this, Store, TEXT("GameState.testKoniec"), false);
-		this->Variables.Add(testKoniec);
+		gotTip->Init<UArticyBool>(this, Store, TEXT("GameState.gotTip"), false);
+		this->Variables.Add(gotTip);
+		visitedDialogue1->Init<UArticyBool>(this, Store, TEXT("GameState.visitedDialogue1"), false);
+		this->Variables.Add(visitedDialogue1);
+		visitedDialogue2->Init<UArticyBool>(this, Store, TEXT("GameState.visitedDialogue2"), false);
+		this->Variables.Add(visitedDialogue2);
+		testEnd->Init<UArticyBool>(this, Store, TEXT("GameState.testEnd"), false);
+		this->Variables.Add(testEnd);
+		cheatUsed->Init<UArticyBool>(this, Store, TEXT("GameState.cheatUsed"), false);
+		this->Variables.Add(cheatUsed);
 	}
 };
 

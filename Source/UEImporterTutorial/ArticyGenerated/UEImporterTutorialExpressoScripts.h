@@ -4,7 +4,7 @@
 #pragma once
 
 #include "CoreUObject.h"
-#include "ArticyRuntime/Public/ArticyExpressoScripts.h"
+#include "ArticyExpressoScripts.h"
 #include "UEImporterTutorialGlobalVariables.h"
 #include "UEImporterTutorialExpressoScripts.generated.h"
 
@@ -59,50 +59,52 @@ public:
 	#endif
 	 UUEImporterTutorialExpressoScripts() 
 	{
-		Conditions.Add(-473103579, [&]
+		Conditions.Add(1869598754, [&]
 		{
 			return ConditionOrTrue(
-				!(*GameState->odpalonoDialog1)
+				!(*GameState->visitedDialogue1)
 			);
 		});
-		Conditions.Add(-711431537, [&]
+		Conditions.Add(-699477186, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->odpalonoDialog1)
+				(*GameState->visitedDialogue1)
 			);
 		});
-		Instructions.Add(79399307, [&]
+		Instructions.Add(396507598, [&]
 		{
-			(*GameState->odpalonoDialog1) = true;
+			(*GameState->testEnd) = true;
 		});
-		Instructions.Add(67456409, [&]
+		Instructions.Add(1936233199, [&]
 		{
-			(*GameState->testKoniec) = true;
+			(*GameState->gotTip) = true;
 		});
-		Instructions.Add(465079271, [&]
-		{
-			(*GameState->mamPodpowiedz) = true;
-		});
-		Conditions.Add(-795673627, [&]
+		Conditions.Add(1546660066, [&]
 		{
 			return ConditionOrTrue(
-				!(*GameState->odpalonoDialog2)
+				!(*GameState->visitedDialogue2)
 			);
 		});
-		Conditions.Add(-423128497, [&]
+		Conditions.Add(-451859458, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->odpalonoDialog2)
+				(*GameState->visitedDialogue2)
 			);
 		});
-		Instructions.Add(-1330650628, [&]
-		{
-			(*GameState->odpalonoDialog2) = true;
-		});
-		Conditions.Add(334985452, [&]
+		Conditions.Add(-432057496, [&]
 		{
 			return ConditionOrTrue(
-				(*GameState->mamPodpowiedz) == true
+				(*GameState->gotTip) == true
+			);
+		});
+		Instructions.Add(-1479719206, [&]
+		{
+			(*GameState->cheatUsed) = true;
+		});
+		Conditions.Add(1183873942, [&]
+		{
+			return ConditionOrTrue(
+				(*GameState->cheatUsed) == true
 			);
 		});
 	}

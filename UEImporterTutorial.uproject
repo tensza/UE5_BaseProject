@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.3",
+	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -19,9 +19,9 @@
 			]
 		},
 		{
-			"Name": "ArticyImporter",
+			"Name": "ArticyXImporter",
 			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/16208606a3f84c9a880c2edffd533ec8"
-		}
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/09bac960d10c4e2aa743b346f1a53abc"
+		},
 	]
 }

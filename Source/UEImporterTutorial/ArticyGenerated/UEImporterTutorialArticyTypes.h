@@ -4,7 +4,7 @@
 #pragma once
 
 #include "CoreUObject.h"
-#include "ArticyRuntime/Public/ArticyBaseInclude.h"
+#include "ArticyBaseInclude.h"
 #include "UEImporterTutorialInterfaces.h"
 #include "UEImporterTutorialArticyTypes.generated.h"
 
@@ -87,29 +87,6 @@ class EUEImporterTutorialPathCaps : uint8
 	Diamond = 4,
 	Square = 5,
 	Disc = 6,
-};
-
-/** -------------------------------------------------------------------------------- */
-
-UENUM(BlueprintType)
-enum
-/** UENUM generated form ArticyObjectDef LocationAnchorSize */
-class EUEImporterTutorialLocationAnchorSize : uint8
-{
-	Small = 0,
-	Medium = 1,
-	Large = 2,
-};
-
-/** -------------------------------------------------------------------------------- */
-
-UENUM(BlueprintType)
-enum
-/** UENUM generated form ArticyObjectDef PreviewImageViewBoxModes */
-class EUEImporterTutorialPreviewImageViewBoxModes : uint8
-{
-	FromAsset = 0,
-	Custom = 1,
 };
 
 /** -------------------------------------------------------------------------------- */
@@ -310,7 +287,7 @@ class UEIMPORTERTUTORIAL_API UUEImporterTutorialComment : public UArticyComment,
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="CreatedBy"))
-	FString CreatedBy = TEXT("");
+	FText CreatedBy = FText::GetEmpty();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="CreatedOn"))
 	FDateTime CreatedOn;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Color"))
@@ -422,18 +399,30 @@ public:
 	float Age = 0.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Species"))
 	FText Species = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Species (Localized)"))
+	FText GetSpecies() { return GetPropertyText(Species); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Born in"))
 	FText BornIn = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Born In (Localized)"))
+	FText GetBornIn() { return GetPropertyText(BornIn); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Sex"))
 	EUEImporterTutorialSex Sex;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Profession"))
 	FText Occupation = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Occupation (Localized)"))
+	FText GetOccupation() { return GetPropertyText(Occupation); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Voice"))
 	FText Accent = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Accent (Localized)"))
+	FText GetAccent() { return GetPropertyText(Accent); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Personality"))
 	FText Personality = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Personality (Localized)"))
+	FText GetPersonality() { return GetPropertyText(Personality); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Appearance"))
 	FText Appearance = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Appearance (Localized)"))
+	FText GetAppearance() { return GetPropertyText(Appearance); }
 };
 /** UCLASS generated from ArticyObjectDef DefaultSupportingCharacterTemplate */
 UCLASS(BlueprintType)
@@ -466,16 +455,28 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Goals"))
 	FText Motivation = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Motivation (Localized)"))
+	FText GetMotivation() { return GetPropertyText(Motivation); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Inner Conflict"))
 	FText InnerConflict = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Inner Conflict (Localized)"))
+	FText GetInnerConflict() { return GetPropertyText(InnerConflict); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Skills"))
 	FText Skills = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Skills (Localized)"))
+	FText GetSkills() { return GetPropertyText(Skills); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Weaknesses"))
 	FText Fears = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Fears (Localized)"))
+	FText GetFears() { return GetPropertyText(Fears); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Quirks / Habits"))
 	FText Habits = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Habits (Localized)"))
+	FText GetHabits() { return GetPropertyText(Habits); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Further Details"))
 	FText FurtherDetails = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Further Details (Localized)"))
+	FText GetFurtherDetails() { return GetPropertyText(FurtherDetails); }
 };
 /** UCLASS generated from ArticyObjectDef DefaultMainCharacterTemplate */
 UCLASS(BlueprintType)
@@ -802,9 +803,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="DisplayName"))
 	FText DisplayName = FText::GetEmpty();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Filename"))
-	FString Filename = TEXT("");
+	FText Filename = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Filename (Localized)"))
+	FText GetFilename() { return GetPropertyText(Filename); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="OriginalSource"))
-	FString OriginalSource = TEXT("");
+	FText OriginalSource = FText::GetEmpty();
+	UFUNCTION(BlueprintPure, meta=(DisplayName="Get Original Source (Localized)"))
+	FText GetOriginalSource() { return GetPropertyText(OriginalSource); }
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="PreviewImage"))
 	UArticyPreviewImage* PreviewImage = nullptr;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(DisplayName="Color"))

@@ -14,12 +14,8 @@ class UEIMPORTERTUTORIAL_API UUEImporterTutorialDatabase : public UArticyDatabas
 	GENERATED_BODY()
 	
 public:
-	 UUEImporterTutorialDatabase() 
-	{
-		SetExpressoScriptsClass(UUEImporterTutorialExpressoScripts::StaticClass());
-	}
 	
-	/** Get the instace (copy of the asset) of the database. */
+	/** Get the instance (copy of the asset) of the database. */
 	UFUNCTION(BlueprintPure, Category = "articy:draft", meta=(HidePin="WorldContext", DefaultToSelf="WorldContext", DisplayName="GetArticyDB", keywords="database"))
 	static UUEImporterTutorialDatabase* Get(const UObject* WorldContext) 
 	{
